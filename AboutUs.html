@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/fb693b02e4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <link href="./css/styles.css" media="all" rel="stylesheet">
+    <title>AboutUs</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/Logo.svg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="Home.html">home</a></li>
+                <li><a href="Recipes.html">recipes</a></li>
+                <li><a href="AboutUs.html" class="active">about us</a></li>
+            </ul>
+        </nav>
+        <div class="header_buttons">
+            <i class="fa-solid fa-bars menu_button" role="button" id="menuToggle"></i>
+            <i class="fa-solid fa-magnifying-glass search_button" role="button"></i>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-dropdown" id="search-dropdown" style="display: none;"></div>
+        </div>
+    </header>
+
+    <div class="mob-menu" id="mobileMenu">
+        <div class="mob-menu_top">
+            <img src="./images/Logo-mob.svg" alt="logo">
+            <i class="fa-solid fa-xmark close_button" role="button" alt="Close" id="CloseMenu"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">home</a></li>
+                <hr>
+                <li><a href="Recipes.html">recipes</a></li>
+                <hr>
+                <li><a href="AboutUs.html" class="active">about us</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <div class="button-wrapper-mobile">
+            <i class="fa-solid fa-magnifying-glass search_button" role="button"></i>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="main-top-row">
+            <h1>Welcome to Cooks Delight!</h1>
+            <div class="main-top-row-column">
+                <p>At Cooks Delight, we believe that cooking is an art that brings people together. Founded in 2023, our
+                    mission is to inspire home cooks of all levels to create delicious meals and share their culinary
+                    experiences.</p>
+                <button class="explore-recipes_button" onclick="location.href='Recipes.html';">explore recipes</button>
+            </div>
+        </section>
+        <section class="about-us-main">
+            <div class="about-us-main_top">
+                <img src="./images/Chef.jpg" alt="Chef">
+                <div class="text-column">
+                    <h1>Our Story</h1>
+                    <p>Welcome to Cooks Delight! Our journey began as a humble blog, born out of a shared passion for
+                        food and the joy of cooking. What started as a small gathering of enthusiastic home cooks has
+                        blossomed into a vibrant community that celebrates the art of culinary creation.</p>
+                    <p>Our founder, inspired by the rich culinary traditions of their heritage, spent countless hours in
+                        the kitchen, experimenting with flavors and techniques. From the bustling markets of their
+                        hometown to the cozy family dinners filled with laughter and love, each moment inspired a deep
+                        appreciation for the artistry of cooking.
+                        Driven by an insatiable curiosity, our founder traveled the globe, immersing themselves in
+                        diverse culinary cultures.</p>
+                    <span>Cooks Delight</span>
+                </div>
+            </div>
+            <div class="about-us-main_bottom">
+                <img src="./images/Chef Is Cooking Pasta.jpg" alt="Chef Is Cooking Pasta">
+                <img src="./images/Melted Cheese.jpg" alt="Melted Cheese">
+                <img src="./images/Cooking Rice.jpg" alt="Cooking Rice">
+                <img src="./images/Smoking Plate.jpg" alt="Smoking Plate">
+                <img src="./images/Cutting With A Knife.jpg" alt="Cutting With A Knife">
+                <img src="./images/Steak On The Grill.jpg" alt="Steak On The Grill">
+                <img src="./images/Cooking Dumplings.jpg" alt="Cooking Dumplings">
+                <img src="./images/Cooking Bread.jpg" alt="Cooking Bread">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_top">
+            <img src="./images/Logo-bw.svg">
+            <div class="links-wrapper_footer">
+                <a href="Home.html">HOME</a>
+                <p>|</p>
+                <hr>
+                <a href="Recipes.html">RECIPES</a>
+                <p>|</p>
+                <hr>
+                <a href="AboutUs.html">ABOUT US</a>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.tiktok.com">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p> © 2024 COOKS DELIGHT</p>
+    </footer>
+
+    <script src="/js/mob-menu.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+
+</html>

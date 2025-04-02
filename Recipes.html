@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/fb693b02e4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <link href="./css/styles.css" media="all" rel="stylesheet">
+    <title>Recipes</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/Logo.svg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="Home.html">home</a></li>
+                <li><a href="Recipes.html" class="active">recipes</a></li>
+                <li><a href="AboutUs.html">about us</a></li>
+            </ul>
+        </nav>
+        <div class="header_buttons">
+            <i class="fa-solid fa-bars menu_button" role="button" id="menuToggle"></i>
+            <i class="fa-solid fa-magnifying-glass search_button" role="button"></i>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-dropdown" id="search-dropdown" style="display: none;"></div>
+        </div>
+    </header>
+
+    <div class="mob-menu" id="mobileMenu">
+        <div class="mob-menu_top">
+            <img src="./images/Logo-mob.svg" alt="logo">
+            <i class="fa-solid fa-xmark close_button" role="button" alt="Close" id="CloseMenu"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">home</a></li>
+                <hr>
+                <li><a href="Recipes.html">recipes</a></li>
+                <hr>
+                <li><a href="AboutUs.html" class="active">about us</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <div class="button-wrapper-mobile">
+            <i class="fa-solid fa-magnifying-glass search_button" role="button"></i>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="main-top-row">
+            <h1>Our Essential Recipes</h1>
+            <div class="main-top-row-column">
+                <p>Welcome to Cooks Delight's treasure trove of cooking wisdom! Whether you're a seasoned chef or just
+                    starting your culinary journey, our recipes are designed to elevate your skills, enhance your
+                    kitchen experience, and bring joy to your cooking adventures</p>
+            </div>
+        </section>
+        <section class="recipes">
+            <div class="recipes_header">
+                <span class="highlight">recipes</span>
+                <h1>Embark on a journey</h1>
+                <p>With our diverse collection of recipes we have something to satisfy every palate.</p>
+                <div class="recipes_tab">
+                    <button alt="allrep" class="tab_button active-tab" id="all-button">ALL</button>
+                    <button alt="vegan" class="tab_button" id="vegan-button">VEGAN</button>
+                    <button alt="breakfast" class="tab_button" id="breakfast-button">BREAKFAST</button>
+                    <button alt="lunch" class="tab_button" id="lunch-button">LUNCH</button>
+                    <button alt="dinner" class="tab_button" id="dinner-button">DINNER</button>
+                    <button alt="dessert" class="tab_button" id="dessert-button">DESSERT</button>
+                    <button alt="quickbite" class="tab_button" id="quick-bite-button">QUICK BITE!</button>
+                </div>
+            </div>
+            <div class="recipes_cards" id="RecipesCards">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_top">
+            <img src="./images/Logo-bw.svg">
+            <div class="links-wrapper_footer">
+                <a href="Home.html">HOME</a>
+                <p>|</p>
+                <hr>
+                <a href="Recipes.html">RECIPES</a>
+                <p>|</p>
+                <hr>
+                <a href="AboutUs.html">ABOUT US</a>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.tiktok.com">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p> © 2024 COOKS DELIGHT</p>
+    </footer>
+
+    <script src="./js/recipes.js"></script>
+    <script src="/js/mob-menu.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+
+</html>

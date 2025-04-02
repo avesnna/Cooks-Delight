@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/fb693b02e4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="./css/styles.css" media="all" rel="stylesheet">
+    <title>Dish</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/Logo.svg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="Home.html">home</a></li>
+                <li><a href="Recipes.html">recipes</a></li>
+                <li><a href="AboutUs.html">about us</a></li>
+            </ul>
+        </nav>
+        <div class="header_buttons">
+            <i class="fa-solid fa-bars menu_button" role="button" id="menuToggle"></i>
+            <i class="fa-solid fa-magnifying-glass search_button" role="button"></i>
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-dropdown" id="search-dropdown" style="display: none;"></div>
+        </div>
+    </header>
+
+    <div class="mob-menu" id="mobileMenu">
+        <div class="mob-menu_top">
+            <img src="./images/Logo-mob.svg" alt="logo">
+            <i class="fa-solid fa-xmark close_button" role="button" alt="Close" id="CloseMenu"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html" class="active">home</a></li>
+                <hr>
+                <li><a href="Recipes.html">recipes</a></li>
+                <hr>
+                <li><a href="AboutUs.html">about us</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <div class="button-wrapper-mobile">
+            <i class="fa-solid fa-magnifying-glass search_button" role="button"></i>
+
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="one-recipe">
+            <div class="recipes_header">
+                <span class="highlight">recipe</span>
+                <h1></h1>
+                <p></p>
+                <div class="card-info">
+                    <div class="card-info-part">
+                        <p><i class="fa-solid fa-clock"></i></p>
+                        <p class="time"></p>
+                    </div>
+                    <span class="dot"></span>
+                    <div class="card-info-part">
+                        <p> <i class="fa-solid fa-basket-shopping"></i></p>
+                        <p class="prep"></p>
+                    </div>
+                    <span class="dot"></span>
+                    <div class="card-info-part">
+                        <p> <i class="fa-solid fa-utensils"></i></p>
+                        <p class="serves"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-dish">
+            <div class="main-image">
+                <img>
+            </div>
+            <div class="dish-more-info">
+                <div class="ingredients-container">
+                    <div class="ingredients">
+                        <h1>Ingredients</h1>
+                        <ul>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bowl-rice"></i>
+                </div>
+                <div class="nutrition-container">
+                    <div class="nutrition">
+                        <h1>Nutritional Value</h1>
+                        <ul>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                </div>
+            </div>
+            <div class="dish-recipe">
+                <h1>how to cook</h1>
+                <p></p>
+                <div class="bon-appetit">
+                    <h2>bon appetit!</h2>
+                </div>
+            </div>
+        </section>
+        <section class="featured">
+            <div class="featured_header">
+                <h1>featured recipes</h1>
+                <div class="featured_navigation">
+                    <i class="fa-solid fa-circle-arrow-left featured_navigation-arrow-left" role="button"></i>
+                    <i class="fa-solid fa-circle-arrow-right featured_navigation-arrow-right" role="button"></i>
+                </div>
+            </div>
+            <div class="featured_card-carousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_top">
+            <img src="./images/Logo-bw.svg">
+            <div class="links-wrapper_footer">
+                <a href="Home.html">HOME</a>
+                <p>|</p>
+                <hr>
+                <a href="Recipes.html">RECIPES</a>
+                <p>|</p>
+                <hr>
+                <a href="AboutUs.html">ABOUT US</a>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.tiktok.com">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p> © 2024 COOKS DELIGHT</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/onerecipe.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/mob-menu.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+
+</html>
